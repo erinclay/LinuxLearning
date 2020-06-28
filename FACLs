@@ -1,0 +1,52 @@
+Saturday Night Snippet (learning Linux on LinuxAcademy):
+
+
+cloud_user@ip-10-0-0-118:~$ sudo useradd pjohn
+
+sudo: unable to resolve host ip-10-0-0-118
+
+[sudo] password for cloud_user: 
+
+cloud_user@ip-10-0-0-118:~$ sudo mkdir /project51
+
+sudo: unable to resolve host ip-10-0-0-118
+
+cloud_user@ip-10-0-0-118:~$ sudo useradd pjohn
+
+sudo: unable to resolve host ip-10-0-0-118
+
+useradd: user 'pjohn' already exists
+
+cloud_user@ip-10-0-0-118:~$ sudo mkdir /project51
+
+sudo: unable to resolve host ip-10-0-0-118
+
+mkdir: cannot create directory ‘/project51’: File exists
+
+cloud_user@ip-10-0-0-118:~$ sudo -i
+
+sudo: unable to resolve host ip-10-0-0-118
+
+root@ip-10-0-0-118:~# exit
+
+logout
+
+cloud_user@ip-10-0-0-118:~$ sudo touch /project51/TPSreport.txt
+
+sudo: unable to resolve host ip-10-0-0-118
+
+cloud_user@ip-10-0-0-118:~$ sudo setfacl -m u:pjohn:rwx /project51/TPSreport.txt
+
+sudo: unable to resolve host ip-10-0-0-118
+
+cloud_user@ip-10-0-0-118:~$ sudo chmod o-rwx /project51/TPSreport.txt
+
+cloud_user@ip-10-0-0-118:~$ Connection to xx.xxx.xxx.xx closed by remote host.
+
+Connection to xx.xxx.xxx.xx closed.
+
+
+
+***
+
+Am aware of ACLs and their uses but trying to get a "Deep Dive" on all Linux concepts to bring in a level of muscle memory when taking Linux+ and beyond. Also need to revisit cron because the uses are limitless...especially for forgetful people.
